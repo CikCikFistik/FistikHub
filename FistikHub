@@ -61,3 +61,7 @@ end)
 OtherSection:NewButton("Rivals Aim Bot", "Dominate every match", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/CikCikFistik/script/refs/heads/main/script"))()
 end)
+
+OtherSection:NewButton("Tp To Anyone", "Slect player and boom!", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/CikCikFistik/tp/refs/heads/main/tp"))()
+end)
