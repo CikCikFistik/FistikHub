@@ -9,9 +9,6 @@ MainSection:NewButton("Fly", "Makes You Fly Like Fistik", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
 end)
 
-OtherSection:NewButton("RivalsAimBot", "Dominate every match", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/CikCikFistik/script/refs/heads/main/script"))()
-end)
 
 MainSection:NewButton("CmdBar", "FE Admin Commands", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"),true)()
@@ -59,4 +56,8 @@ local OtherSection = Other:NewSection("FistikHub Other")
 
 OtherSection:NewButton("ChatSpoofer", "Send Fake Messages", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/djBfk8Li"),true)()
+end)
+
+OtherSection:NewButton("Rivals Aim Bot", "Dominate every match", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/CikCikFistik/script/refs/heads/main/script"))()
 end)
