@@ -1,0 +1,62 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("FistikHub", "LightTheme")
+
+--main
+local Main = Window:NewTab("Main")
+local MainSection = Main:NewSection("FistikHub Main")
+
+MainSection:NewButton("Fly", "Makes You Fly Like Fistik", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
+end)
+
+OtherSection:NewButton("RivalsAimBot", "Dominate every match", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/CikCikFistik/script/refs/heads/main/script"))()
+end)
+
+MainSection:NewButton("CmdBar", "FE Admin Commands", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"),true)()
+end)
+
+
+
+--player
+local Player = Window:NewTab("Player")
+local PlayerSection = Player:NewSection("FistikHub Player")
+
+PlayerSection:NewToggle("SuperHuman", "Go really fast and jump really high", function(state)
+    if state then
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 120
+	game.Players.LocalPlayer.Character.Humanoid.JumpPower = 120
+    else
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+	game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+    end
+end)
+
+PlayerSection:NewSlider("WalkSpeed", "Your Walk Speed", 500, 16, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+PlayerSection:NewSlider("JumpPower", "Your Jump Hight", 350, 50, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+end)
+
+PlayerSection:NewSlider("WalkSpeed (extra)", "Your Walk Speed but no limit", 10000, 16, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+
+PlayerSection:NewButton("Reset WS / JP", "Resets speed and jump power to normal", function()
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+	game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+end)
+
+
+
+--other
+local Other = Window:NewTab("Other")
+local OtherSection = Other:NewSection("FistikHub Other")
+
+OtherSection:NewButton("ChatSpoofer", "Send Fake Messages", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/djBfk8Li"),true)()
+end)
