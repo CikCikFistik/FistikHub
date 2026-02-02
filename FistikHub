@@ -6,7 +6,7 @@ local Main = Window:NewTab("Main")
 local MainSection = Main:NewSection("FistikHub Main")
 
 MainSection:NewButton("Fly", "Makes You Fly Like Fistik", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/CikCikFistik/flyscript/refs/heads/main/main"))()
 end)
 
 
