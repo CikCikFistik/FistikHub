@@ -65,3 +65,7 @@ end)
 OtherSection:NewButton("Tp To Anyone", "Slect player and boom!", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/CikCikFistik/tp/refs/heads/main/tp"))()
 end)
+
+OtherSection:NewButton("Tp To Saved Position", "Save position and press teleport and boom!", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/CikCikFistik/tpsave/refs/heads/main/main"))()
+end)
