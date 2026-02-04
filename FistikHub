@@ -15,6 +15,10 @@ MainSection:NewButton("CmdBar", "FE Admin Commands", function()
 end)
 
 
+MainSection:NewButton("FistikFling", "Fling People On Touch", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/CikCikFistik/FistikFling/refs/heads/main/main"),true)()
+end)
+
 
 
 
@@ -66,4 +70,3 @@ end)
 
 OtherSection:NewButton("Tp To Saved Position", "Save position and press teleport and boom!", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/CikCikFistik/tpsave/refs/heads/main/main"))()
-end)
