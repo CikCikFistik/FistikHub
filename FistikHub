@@ -14,6 +14,7 @@ MainSection:NewButton("CmdBar", "FE Admin Commands", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/CikCikFistik/CmdBar.infiniteyield./refs/heads/main/main"),true)()
 end)
 
+
 MainSection:NewButton("Fling Ui", "Fling People On Touch", function()
     loadstring(game:https://raw.githubusercontent.com/CikCikFistik/FistikFling/refs/heads/main/main"),true)()
 end)
