@@ -15,9 +15,6 @@ MainSection:NewButton("CmdBar", "FE Admin Commands", function()
 end)
 
 
-MainSection:NewButton("Fling Ui", "Fling People On Touch", function()
-    loadstring(game:https://raw.githubusercontent.com/CikCikFistik/FistikFling/refs/heads/main/main"),true)()
-end)
 
 
 
