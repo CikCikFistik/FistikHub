@@ -21,7 +21,6 @@ end)
 
 
 
-
 --player
 local Player = Window:NewTab("Player")
 local PlayerSection = Player:NewSection("FistikHub Player")
@@ -60,6 +59,10 @@ end)
 local Other = Window:NewTab("Other")
 local OtherSection = Other:NewSection("FistikHub Other")
 
+OtherSection:NewButton("ChatSpoofer", "Send Fake Messages", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/djBfk8Li"),true)()
+end)
+
 OtherSection:NewButton("Rivals Aim Bot", "Dominate every match", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/CikCikFistik/script/refs/heads/main/script"))()
 end)
@@ -70,3 +73,4 @@ end)
 
 OtherSection:NewButton("Tp To Saved Position", "Save position and press teleport and boom!", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/CikCikFistik/tpsave/refs/heads/main/main"))()
+end)
