@@ -1,4 +1,4 @@
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/CikCikFistik/libraryforfistikhub/refs/heads/main/library"))()
 local Window = Library.CreateLib("FistikHub", "LightTheme")
 
 --main
@@ -11,7 +11,11 @@ end)
 
 
 MainSection:NewButton("CmdBar", "FE Admin Commands", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"),true)()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/CikCikFistik/CmdBar.infiniteyield./refs/heads/main/main"),true)()
+end)
+
+MainSection:NewButton("Fling Ui", "Fling People On Touch", function()
+    loadstring(game:https://raw.githubusercontent.com/CikCikFistik/FistikFling/refs/heads/main/main"),true)()
 end)
 
 
@@ -53,10 +57,6 @@ end)
 --other
 local Other = Window:NewTab("Other")
 local OtherSection = Other:NewSection("FistikHub Other")
-
-OtherSection:NewButton("ChatSpoofer", "Send Fake Messages", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/djBfk8Li"),true)()
-end)
 
 OtherSection:NewButton("Rivals Aim Bot", "Dominate every match", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/CikCikFistik/script/refs/heads/main/script"))()
