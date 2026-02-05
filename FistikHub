@@ -74,3 +74,8 @@ end)
 OtherSection:NewButton("Tp To Saved Position", "Save position and press teleport and boom!", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/CikCikFistik/tpsave/refs/heads/main/main"))()
 end)
+
+OtherSection:NewButton("Create Tornado", "Creates a tornado from unanchored parts! (only works for some games)", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/CikCikFistik/TornadoScript/refs/heads/main/main"))()
+end)
+
