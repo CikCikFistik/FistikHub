@@ -53,6 +53,11 @@ PlayerSection:NewButton("Reset WS / JP", "Resets speed and jump power to normal"
 	game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
 end)
 
+PlayerSection:NewButton("FistikDash", "Dash With Q", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/CikCikFistik/FistikDash/refs/heads/main/main"),true)()
+end)
+
+
 
 
 --other
